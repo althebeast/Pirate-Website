@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Üye Kayıt Formu</h1>
+    <form name="kayit" action="kayit.aspx" method="get">
+    <table>
+      <tr>
+        <td>Kullanıcı Adı</td><td><input type="text" name="nickname" required autocomplete="on
+          " size="25" maxlength="30"</td>
+      </tr>
+      <tr>
+        <td>E-mail</td><td><input type="email" name="email" required size="25" maxlength="30" autocomplete="on
+          "</td>
+      </tr>
+      <tr>
+        <td>Şifre</td><td><input type="password" name="password" required size="25" maxlength="30"</td>
+      </tr>
+      <tr>
+        <td>Web Sitesi</td><td><input type="url" name="web" size="25" maxlength="30"</td>
+      </tr>
+      <tr>
+        <td></td><td><input type="submit" name="gönder" value="Gönder"> <input type="reset" name="reset" value="Temizle"> </td>
+      </tr>
+      <tr>
+        <td><input type="image" src="images/submit1.png" width="150" title="gönder"></td>
+      </tr>
+    </table>
+    Daha önce korsanlar hakkında bilginiz var mıydı?
+    <br>
+    <br>
+    <input type="radio" name="soru" value="Evet"> Evet <input type="radio" name="soru" value="Hayır"> Hayır
+    <br>
+    <br>
+    <input type="checkbox" name="bülten"> Bültene ona olmak ister misin?
+    <br>
+    Doğum yeri <select name="iller">
+      <option selected>İstanbul</option>
+      <option>Ankara</option>
+      <option>Trabzon</option>
+
+    </select>
+    </form>
+  </body>
+</html>
